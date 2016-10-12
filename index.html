@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Timesheet</title>
+<script src="data.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1 id="code"></h1>
+  <p id="demo"></p>
+</div>
+
+<script>
+var text = "<form>";
+console.log(text);
+var i;
+for (i = 0; i < timeSheet.hours.length; i++) {
+    text += "<div class='well'><label for='text'>" + i + "</label><input type='text' placeholder=" + timeSheet.hours[i] +"></div>";
+    console.log(text);
+}
+console.log(text);
+text += "</form>";
+console.log(text);
+document.getElementById("demo").innerHTML = text;
+document.getElementById("code").innerHTML = timeSheet.code;
+</script>
+
+
+</body>
+</html>
